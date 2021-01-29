@@ -1,4 +1,6 @@
 service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service
+    interface android.hardware.health@2.0::IHealth default
+    interface android.hardware.health@2.1::IHealth default
     class hal charger
     user system
     group system
